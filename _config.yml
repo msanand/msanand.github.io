@@ -1,0 +1,24 @@
+# Dependencies
+markdown:         redcarpet
+pygments:         true
+
+# Permalinks
+permalink:        pretty
+
+# Setup
+title:            Thoughts.toString( )
+tagline:          "Anand Mani Sankar's Journal"
+description:      'Ramblings and opinionated thoughts on technology.'
+url:              http://msanand.github.io
+baseurl:          '/'
+paginate:         1
+
+author:
+  name:           'Anand Mani Sankar'
+  url:            https://twitter.com/msanand
+
+# Custom vars
+version:          1.0.0
+
+github:
+  repo:           https://github.com/msanand/msanand.github.io
