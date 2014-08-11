@@ -5,6 +5,8 @@
 
   {% include google_analytics.html %}
 
+  {% include add_this_script.html %}
+
   <body class="theme-base-0d sidebar-overlay">
 
     {% include sidebar.html %}
@@ -23,6 +25,8 @@
 
       <div class="container content">
         {{ content }}
+
+        {% include add_this.html %}
 
         {% include comments.html %}
 

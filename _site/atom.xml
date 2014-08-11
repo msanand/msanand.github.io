@@ -4,7 +4,7 @@
  <title>Thoughts.toString( )</title>
  <link href="http://msanand.github.io/atom.xml" rel="self"/>
  <link href="http://msanand.github.io/"/>
- <updated>2014-08-11T20:31:47+05:30</updated>
+ <updated>2014-08-11T23:35:44+05:30</updated>
  <id>http://msanand.github.io</id>
  <author>
    <name>Anand Mani Sankar</name>
@@ -38,9 +38,9 @@
 
 &lt;p&gt;There were some obvious &amp;#39;go to&amp;#39; blog sites like &lt;a href=&quot;https://wordpress.com/&quot;&gt;Wordpress&lt;/a&gt; and &lt;a href=&quot;https://www.blogger.com/&quot;&gt;Blogger&lt;/a&gt;. But I wanted to keep away from those, as I knew they didn&amp;#39;t meet some of my criteria. &lt;/p&gt;
 
-&lt;p&gt;I was curious about some of the new blogging platforms like &lt;a href=&quot;https://ghost.org/&quot;&gt;Ghost&lt;/a&gt;, &lt;a href=&quot;https://medium.com/&quot;&gt;Medium&lt;/a&gt;, &lt;a href=&quot;https://svbtle.com/&quot;&gt;Svtle&lt;/a&gt;, etc. They looked nice, simple and had a clear focus on content. Their USP, compared to the traditional blogging platforms, was content discovery. But somehow they looked more like magazine articles to me, than blogs - which can be good or bad, depending on one&amp;#39;s perspective. Anyway, I started comparing these new platforms to analyze the pros/cons, when I accidently bumped into a few blogers talking about moving their blogs to &amp;#39;&lt;a href=&quot;https://pages.github.com/&quot;&gt;Github Pages&lt;/a&gt;&amp;#39; and why they did so. &lt;/p&gt;
+&lt;p&gt;I was curious about some of the new blogging platforms like &lt;a href=&quot;https://ghost.org/&quot;&gt;Ghost&lt;/a&gt;, &lt;a href=&quot;https://medium.com/&quot;&gt;Medium&lt;/a&gt;, &lt;a href=&quot;https://svbtle.com/&quot;&gt;Svtle&lt;/a&gt;, etc. They looked nice, simple and had a clear focus on content. Their USP, compared to the traditional blogging platforms, was content discovery. But somehow they looked more like magazine articles to me, than blogs - which can be good or bad, depending on one&amp;#39;s perspective. Anyway, I started comparing these new platforms to analyze the pros/cons, when I accidently bumped into a few bloggers talking about moving their blogs to &amp;#39;&lt;a href=&quot;https://pages.github.com/&quot;&gt;Github Pages&lt;/a&gt;&amp;#39; and why they did so. &lt;/p&gt;
 
-&lt;p&gt;I was aware of Github pages for projects, but never really thought of it as a blogging platform. A bit of googling got me introduced to &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; and the built-in support in Github Pages. In a matter of minutes, most of my criteria was being checked off. And even before I realized, I was heads down into it. It felt a lot like coding. And in no time, I was ~~writing~~ marking down my first blog. &lt;/p&gt;
+&lt;p&gt;I was aware of Github pages for projects, but never really thought of it as a blogging platform. A bit of googling got me introduced to &lt;a href=&quot;http://jekyllrb.com&quot;&gt;Jekyll&lt;/a&gt; and the built-in support in Github Pages. In a matter of minutes, most of my criteria was being checked off. And even before I realized, I was heads down into it. It felt a lot like coding. And in no time, I was &lt;del&gt;writing&lt;/del&gt; marking down my first blog. &lt;/p&gt;
 
 &lt;p&gt;Jekyll is essentially a parser + generator. It parses content (markdown/textile), liquifies it into templates and spits out a static website ready to be served - in my case, graciously, by Github. The added advantage for me were the following:&lt;/p&gt;
 
