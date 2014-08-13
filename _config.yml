@@ -8,7 +8,7 @@ pygments:         true
 permalink:        pretty
 
 # Setup
-title:            Thoughts.toString( )
+title:            thoughts.toString( )
 tagline:          "Anand Mani Sankar's Journal"
 description:      'Ramblings and opinionated thoughts on technology.'
 url:              http://msanand.github.io
