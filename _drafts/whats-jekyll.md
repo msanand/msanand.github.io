@@ -1,7 +1,7 @@
 ---
 layout: post
 title: What's Jekyll?
-published: false
+published: true
 comments: false
 ---
 
