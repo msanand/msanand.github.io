@@ -14,8 +14,12 @@ description:      'Ramblings and opinionated thoughts on technology.'
 url:              http://msanand.github.io
 baseurl:          '/'
 paginate:         3
-
 excerpt_separator: "<br>"
+gems:
+- jekyll-mentions
+- jemoji
+- jekyll-redirect-from
+- jekyll-sitemap
 
 author:
   name:           'Anand Mani Sankar'
