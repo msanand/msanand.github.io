@@ -5,7 +5,7 @@ redcarpet:
 pygments:         true
 
 # Permalinks
-permalink:        pretty
+permalink:        /posts/:title/
 
 # Setup
 title:            thoughts.toString( )

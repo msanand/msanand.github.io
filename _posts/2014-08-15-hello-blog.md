@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Hello Blog!"
-date:   2014-08-13 16:07:00
+date:   2014-08-15 08:07:00
 categories: blogging
 tags: blogging github-pages jekyll
 comments: true
@@ -18,15 +18,15 @@ Having decided to blog, and contribute to some more garbage on the internet, I w
 My criteria:
 
 * Minimal
-* Reponsive
+* Responsive
 * Quick set-up
 * Hassle-free templating
 * Sufficient control over layouting
 * Quick and easy publishing and hosting  
 * More focus on content, less on styling
-* Write content like writing code
+* Write content like code
 
-There were some obvious 'go to' blog sites like [Wordpress][wordpress] and [Blogger][blogger]. But I wanted to keep away from those, as I knew they didn't meet some of my criteria.
+There were some obvious 'go to' blog sites like [Wordpress][wordpress] and [Blogger][blogger]. But I wanted to keep away from those, as I knew they didn't meet some of my criteria. 
 
 I was curious about some of the new blogging platforms like [Ghost][ghost], [Medium][medium], [Svtle][svtle], etc. They looked nice, simple and had a clear focus on content. Their USP, compared to the traditional blogging platforms, was content discovery. But somehow they looked more like magazine articles to me, than blogs - which can be good or bad, depending on one's perspective. Anyway, I started comparing these new platforms to analyze the pros/cons, when I accidently bumped into a few bloggers talking about moving their blogs to '[Github Pages][github-pages]' and why they did so.
 
