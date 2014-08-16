@@ -26,7 +26,7 @@ My criteria:
 * More focus on content, less on styling
 * Write content like code
 
-There were some obvious 'go to' blog sites like [Wordpress][wordpress] and [Blogger][blogger]. But I wanted to keep away from those, as I knew they didn't meet some of my criteria. 
+There were some obvious 'go to' blog sites like [Wordpress][wordpress] and [Blogger][blogger]. But I wanted to keep away from those, as I knew they didn't meet some of my criteria.
 
 I was curious about some of the new blogging platforms like [Ghost][ghost], [Medium][medium], [Svtle][svtle], etc. They looked nice, simple and had a clear focus on content. Their USP, compared to the traditional blogging platforms, was content discovery. But somehow they looked more like magazine articles to me, than blogs - which can be good or bad, depending on one's perspective. Anyway, I started comparing these new platforms to analyze the pros/cons, when I accidently bumped into a few bloggers talking about moving their blogs to '[Github Pages][github-pages]' and why they did so.
 
@@ -43,7 +43,7 @@ A simple, version controlled, static site generator with markdown and templating
 
 There are some more aspects like SEO, administration, plugin support, theming etc. that I haven't analyzed as yet. But I'm already feeling positive about Github Pages + Jekyll combination. And since this has taken me only few minutes to go from zilch to live, I have no complaints!
 
-Over the next few days, I will be experimenting with this platform and, in the process blogging, about it. So I don't have to break my head over topics to blog about - a win-win! (And a big relief! Phew!)
+Over the next few days, I will be experimenting with this platform and in the process, blogging about it. So I don't have to break my head over topics to blog about - a win-win! (And a big relief! Phew!)
 
 
 [jekyll]: http://jekyllrb.com
