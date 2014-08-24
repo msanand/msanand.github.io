@@ -4,11 +4,14 @@
 
 <!-- Toggleable sidebar -->
 <div class="sidebar" id="sidebar">
-  <div class="sidebar-item">
+  <br>
+  <div class="smallerCircularProfilePic"></div>
+
+  <div class="sidebar-item" style="text-align:center">
     <p>{{ site.description }}</p>
   </div>
 
-  <nav class="sidebar-nav">
+  <nav class="sidebar-nav" style="text-align:center">
     <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="/">Home</a>
 
     {% comment %}
@@ -31,9 +34,10 @@
     <span class="sidebar-nav-item">v{{ site.version }}</span>
   </nav>
 
-  <div class="sidebar-item">
+  <div class="sidebar-item" style="text-align:center">
     <p>
-      &copy; {{ site.time | date: '%Y' }}. All rights reserved.
+      &copy; {{ site.time | date: '%Y' }}. Anand Mani Sankar.
     </p>
+      All rights reserved.
   </div>
 </div>

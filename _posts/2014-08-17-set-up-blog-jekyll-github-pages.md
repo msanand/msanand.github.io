@@ -1,13 +1,13 @@
 ---
 layout: post
-title:  "How to set up a blog with Jekyll and Github Pages"
+title:  "How to set up a blog with Jekyll and Github Pages - Part 1"
 date:   2014-08-17 09:10:00
 categories: blogging
 tags: blogging github-pages jekyll
 comments: true
 ---
 
-In my [previous blog]({% post_url 2014-08-15-hello-blog %}), I wrote about some of my expectations from a blogging platform, and reasons why I was excited about Jekyll & Github Pages.
+In my [previous post]({% post_url 2014-08-15-hello-blog %}), I wrote about some of my expectations from a blogging platform, and reasons why I was excited about Jekyll & Github Pages.
 
 Here, I'll give you a quick run-through of how to get a blog up and running in a matter of few hours. <br>
 
@@ -86,4 +86,4 @@ Now you have a jekyll based blog where you can add your posts as markdown, a loc
 
 ###Jazzing up your blog:
 
-In my next blog, I'll talk about how you can jazz-up your blog with comments, sharing options, etc.
+In my [next post]({% post_url 2014-08-24-set-up-blog-jekyll-github-pages-2 %}), I'll talk about how you can jazz-up your blog with comments, sharing options, etc.
