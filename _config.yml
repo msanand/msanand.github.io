@@ -11,7 +11,7 @@ permalink:        /posts/:title/
 title:            ANAND MANI SANKAR
 tagline:          "thoughts.toString( )"
 description:      'Ramblings and opinionated thoughts on technology.'
-url:              http://msanand.github.io
+url:              http://anandmanisankar.com
 baseurl:          '/'
 paginate:         3
 excerpt_separator: "<br>"
