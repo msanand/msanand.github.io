@@ -68,7 +68,7 @@ Many of the frameworks/libraries implementing MVC give you the option of definin
 
 <iframe width="100%" height="150" src="http://jsfiddle.net/anandmanisankar/bwhpavha/embedded/html,js,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
-The `$scope` object acts like a ViewModel which provides the data required for the view. The controller initializes the $scope and provides functions to manage the behaviour. It does not store any state of its own. The view is the HTML that has the corresponding controller directive. Very clear seperation of concerns!
+The `$scope` object acts like a ViewModel which provides the data required for the view. The controller initializes the $scope and provides functions to manage the behaviour. It does not store any state of its own. The view is the HTML that has the corresponding controller directive. Very clear separation of concerns!
 
 ###Declarative User Interface
 
@@ -134,4 +134,4 @@ Any sub-system of your application can be tested by mocking the dependency that 
 
 These, in my opinion, are some of the best features of AngularJS. This doesn't mean it is perfect. Angular has its own flaws in being highly opinionated and sometimes complicated. It is also built mainly for CRUD applications, and is not suited for games or graphics intensive applications. But the core design principles are fairly strong, which is why I think it is quite powerful and stands out in the web development world. Plus the backing from Google is giving it that extra push!
 
-I'll cling on to this topic for a few more posts, while I explore some of the intracacies of this superheroic JavaScript framework.
+I'll cling on to this topic for a few more posts, while I explore some of the intricacies of this superheroic JavaScript framework.
