@@ -54,6 +54,12 @@ But like I said before, the beauty lies in the simplicity that abstracts the int
 
 In future, Object.observe() - the new ECMAScript 6 API under construction, will replace these custom change detection mechanism. The native implementation should make change detection much faster.
 
+#### **Update: 5<sup>th</sup> Sep 2014**
+What makes data binding in Angular even more powerful is the fact that the binding source can be an expression. Angular evaluates the expression between the double curly brace notation ({% raw %}{{ }}{% endraw %}) before binding.
+
+Here's a quick example:
+<iframe width="100%" height="150" src="http://jsfiddle.net/anandmanisankar/05eryfmh/embedded/html,js,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+
 ### Well implemented MVC (or MVVM or MVP or MVW)
 
 There has been a lot of debate over whether AngularJS implements MVC or MVVM or MVP. A pissed-off Igor Minar (Lead of AngularJS) decided to end the debate with [this post](https://plus.google.com/+AngularJS/posts/aZNVhj355G2) in the AngularJS forum, deciding to call Angular a MVW framework: Model - View - Whatever!
@@ -102,7 +108,7 @@ AngularJS allows developers to build their own custom HTML constructs: elements,
 
 I also find the usage of directives (if designed well) greatly enhances the readability of the HTML. Imagine HTML with some rich elements like `<colorpicker></colorpicker>`, `<datepicker></datepicker>`, etc. instead of infinitely nested div elements.
 
-Side-note: Polymer, another initiative driven by Google, is making the Web Components standard available to modern day browsers. I really hope to see some synergy between Polymer and AngularJS in the area of Web Components, instead of each taking a path of their own.
+**Side-note:** Polymer, another initiative driven by Google, is making the Web Components standard available to modern day browsers. I really hope to see some synergy between Polymer and AngularJS in the area of Web Components, instead of each taking a path of its own.
 
 ### Dependency Injection
 
