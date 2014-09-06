@@ -54,11 +54,13 @@ But like I said before, the beauty lies in the simplicity that abstracts the int
 
 In future, Object.observe() - the new ECMAScript 6 API under construction, will replace these custom change detection mechanism. The native implementation should make change detection much faster.
 
+<hr>
 #### **Update: 5<sup>th</sup> Sep 2014**
 What makes data binding in Angular even more powerful is the fact that the binding source can be an expression. Angular evaluates the expression between the double curly brace notation ({% raw %}{{ }}{% endraw %}) before binding.
 
 Here's a quick example:
 <iframe width="100%" height="150" src="http://jsfiddle.net/anandmanisankar/05eryfmh/embedded/html,js,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<hr>
 
 ### Well implemented MVC (or MVVM or MVP or MVW)
 
@@ -74,7 +76,7 @@ Many of the frameworks/libraries implementing MVC give you the option of definin
 
 <iframe width="100%" height="150" src="http://jsfiddle.net/anandmanisankar/bwhpavha/embedded/html,js,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
-The `$scope` object acts like a ViewModel which provides the data required for the view. The controller initializes the $scope and provides functions to manage the behaviour. It does not store any state of its own. The view is the HTML that has the corresponding controller directive. Very clear separation of concerns!
+The `$scope` object acts like a ViewModel which provides the data required for the view. The controller initializes the `$scope` and provides functions to manage the behaviour. It does not store any state of its own. The view is the HTML that has the corresponding controller directive. Very clear separation of concerns!
 
 ###Declarative User Interface
 
@@ -82,7 +84,7 @@ The `$scope` object acts like a ViewModel which provides the data required for t
 >
 > <cite>&mdash; Jeff Atwood</cite>
 
-Web programming was becoming JavaScript heavy. Some frameworks took it a notch further by taking the convoluted approach of defining user interface procedurally in Javascript and in turn generting the HTML, entirely ditching the declarative nature of user interface definition using HTML. But over the last few years, HTML has back in-focus again - thanks to [HTML5](http://www.w3.org/TR/html5/) and [Web Components](http://www.w3.org/TR/components-intro/). After all, HTML is what the matters to the browser at the end of the day!
+Web programming was becoming JavaScript heavy. Some frameworks took it a notch further by taking the convoluted approach of defining user interface procedurally in Javascript and in turn generating the HTML, entirely ditching the declarative nature of user interface definition using HTML. But over the last few years, HTML has back in-focus again - thanks to [HTML5](http://www.w3.org/TR/html5/) and [Web Components](http://www.w3.org/TR/components-intro/). After all, HTML is what the matters to the browser at the end of the day!
 
 Being declarative, HTML feels more intuitive for defining the user interface. It is also easy to understand and manipulate. It provides a clear separation of the presentation layer from the imperative logic.
 
