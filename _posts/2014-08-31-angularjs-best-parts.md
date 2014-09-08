@@ -35,7 +35,7 @@ In almost all cases, setting up data binding requires some amount of coding to b
 The model acts as the single source of truth for all the data in your application. The data binding directives ({% raw %}{{ }}{% endraw %}) provided by Angular binds the model to the DOM seamlessly. Rest is magic!
 
 The beauty lies in the simplicity:
-<iframe width="100%" height="150" src="http://jsfiddle.net/anandmanisankar/L6nofag6/3/embedded/html,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
+<iframe width="100%" height="150" src="http://jsfiddle.net/anandmanisankar/L6nofag6/embedded/html,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
 The simplicity is achieved through some smart change detection implemented using 'Dirty checking', as against traditional 'change listeners' or 'accessors' that are used in some other JS frameworks like Backbone. In simple terms, Angular remembers the bound value and compares it to the new value to detect any change. This, it does through an operation called `$digest` loop which loops through all the variables under watch in the current scope and its children to check if it is dirty.
 
@@ -125,7 +125,7 @@ app.controller('MyCtrl', function($scope, $location, MyService) {
   });
 {% endhighlight %}
 
-Here, you see that the controller 'MyCtrl' is provided with all that it needs - framework services like the scope, $location service and also custom services like MyService. Creating these dependencies and managing them is the responsibility of an AngularJS sub-system called Injector. Later, I will post in detail on how the Injector sub-system of AngularJS works. For now, just admire the beauty of the design.  
+Here, you see that the controller 'MyCtrl' is provided with all that it needs - framework services like the scope, $location service and also custom services like MyService. Creating these dependencies and managing them is the responsibility of an AngularJS sub-system called Injector. Later, I will [post in detail on how the Injector sub-system of AngularJS works]({% post_url  2014-09-08-angularjs-dependency-injection-demystified %}). For now, just admire the beauty of the design.  
 
 Dependency Injection is one of the design principles that I really like. It helps you compose a SPA (Single Page Application) better. I have personally used it and have found tremendous benefits, especially when it comes to testability.
 

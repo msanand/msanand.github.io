@@ -65,7 +65,7 @@ Not having a local Jekyll build environment for your blog is akin to not having 
 
 Jekyll is bundled as a ruby gem, and hence require Ruby and RubyGems as pre-requisites. I would recommend visiting the [official installation page](http://jekyllrb.com/docs/installation/) for the steps to install Jekyll.
 
-**TIP**: If you want to keep your local Jekyll installation in sync with the version used in Github Pages, then install the Github Pages gem instead of the Jekyll gem - `gem install github-pages`. This ensures that your local Jekyll build churns out exactly the same site as the Github Pages build would.
+**PRO TIP**: If you want to keep your local Jekyll installation in sync with the version used in Github Pages, then install the Github Pages gem instead of the Jekyll gem - `gem install github-pages`. This ensures that your local Jekyll build churns out exactly the same site as the Github Pages build would.
 
 ###Scaffolding the initial Jekyll content
 Once you are done with the installation, you can scaffold a new Jekyll directory structure using the following command:
@@ -76,11 +76,11 @@ This generates a standard jekyll folder structure (like the one mentioned earlie
 
 Jekyll also comes with a built-in server that helps you preview your web-site locally. You can preview your jekyll website at `localhost:4000` by running the command `jekyll serve`.
 
-**TIP**: You can pass an additional argument to the jekyll serve command to make jekyll watch for changes and serve them automatically - `jekyll serve --watch`
+**PRO TIP**: You can pass an additional argument to the jekyll serve command to make jekyll watch for changes and serve them automatically - `jekyll serve --watch`
 
 You can build your jekyll site locally using the command - `jekyll build`. This generates the site in the \_site folder.
 
-**TIP**: You can maintain a \_drafts folder at the root level for all your blogs which are work-in-progress. Jekyll ignores the posts in the drafts folder when building the site, but at the same time provides a convenient command line argument to include them in the build on your local system - `jekyll serve --drafts`
+**PRO TIP**: You can maintain a \_drafts folder at the root level for all your blogs which are work-in-progress. Jekyll ignores the posts in the drafts folder when building the site, but at the same time provides a convenient command line argument to include them in the build on your local system - `jekyll serve --drafts`
 
 Now you have a jekyll based blog where you can add your posts as markdown, a local environment to build and preview your web-site, and free hosting space in Github Pages!
 
