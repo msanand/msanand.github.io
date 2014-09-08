@@ -29,7 +29,7 @@ Angular leverages dependency injection all across the framework. It works with f
 
 In the above example, the controller `DemoController` is injected with two dependencies: `$scope` and `$http`. The controller doesn't know/care how these objects are created. It only knows the contract provided by these objects and how to consume them.
 
-The interesting part here is how the framework (Angular) understands that `DemoController` requires these two objects. Simple, from the function parameters - `$scope` and `$location`. But what do you think will happen if we switched the order of parameters?
+The interesting part here is how the framework (Angular) understands that `DemoController` requires these two objects. Simple, from the function parameters - `$scope` and `$http`. But what do you think will happen if we switched the order of parameters?
 
 <iframe width="100%" height="200" src="http://jsfiddle.net/anandmanisankar/ae4sgksw/embedded/js,html,result/" allowfullscreen="allowfullscreen" frameborder="0"></iframe>
 
