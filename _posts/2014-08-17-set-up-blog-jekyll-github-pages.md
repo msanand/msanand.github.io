@@ -5,6 +5,7 @@ date:   2014-08-17 09:10:00
 categories: blogging
 tags: blogging github-pages jekyll
 comments: true
+analytics: true
 ---
 
 In my [previous post]({% post_url 2014-08-15-hello-blog %}), I wrote about some of my expectations from a blogging platform, and reasons why I was excited about Jekyll & Github Pages.

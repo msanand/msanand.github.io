@@ -5,6 +5,7 @@ date:   2014-08-15 08:07:00
 categories: blogging
 tags: blogging github-pages jekyll
 comments: true
+analytics: true
 ---
 
 {% highlight js%}

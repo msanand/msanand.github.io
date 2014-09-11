@@ -5,6 +5,7 @@ date:   2014-09-08 10:15 IST
 categories: javascript
 tags: javascript angularjs dependency-injection
 comments: true
+analytics: true
 ---
 
 One of the features that I really like in AngularJS is its use of dependency injection across the framework. I listed it as one of the best features of Angular in [my last post]({% post_url  2014-08-31-angularjs-best-parts %}). And as promised, I'll try to cover this topic in a little more detail here.

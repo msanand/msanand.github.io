@@ -5,6 +5,7 @@ date:   2014-08-24 05:37:00
 categories: blogging
 tags: blogging github-pages jekyll
 comments: true
+analytics: true
 ---
 
 Continuing from where I left off in my [previous post]({% post_url 2014-08-17-set-up-blog-jekyll-github-pages %}), here's how you can jazz-up your Jekyll blog:
@@ -93,7 +94,7 @@ Now you can insert this snippet anywhere you want to by adding the following lin
 
 You can do this for other social networking sites like facebook, linkedIn, etc.
 
-There are also providers like [Add This](http://www.addthis.com/), providing a single consolidated social sharing option. 
+There are also providers like [Add This](http://www.addthis.com/), providing a single consolidated social sharing option.
 
 ### Custom Domain
 

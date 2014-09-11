@@ -5,6 +5,7 @@ date:   2014-08-31 20:01 IST
 categories: javascript
 tags: javascript angularjs
 comments: true
+analytics: true
 ---
 
 Having concluded my [blog series on 'Jekyll']({% post_url 2014-08-24-set-up-blog-jekyll-github-pages-2 %}), I decided to move on to a topic that I have been glued to for sometime now - **AngularJS**.
