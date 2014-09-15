@@ -14,7 +14,7 @@ Having worked on web technologies for a few years now, I have some experience wo
 
 >The superheroic Javascript MVW framework
 
-AngularJS is a structural framework for building dynamic web applications. It is not a library. So, by the principle of 'inversion of control', the developer is expected to code following certain rules and guidelines layed out by the framework.
+AngularJS is a structural framework for building dynamic web applications. It is not a library. So, by the principle of 'inversion of control', the developer is expected to code following certain rules and guidelines laid out by the framework.
 
 Angular is opinionated about how a dynamic web application should be built. And almost all of the opinions are backed by strong design principles and justifications. It also simplifies the application development process by abstracting a lot of the internal complexity and exposing only what the application developer needs to know.
 <br>
