@@ -14,6 +14,8 @@ The injector needs to know how to create the objects that are to be injected, an
 
 In this post, I'll get into the details of how the provider works, the different ways in which you can create custom services and some details on an elegant design pattern built into the provider.  
 
+<br>
+
 ### How does the provider know how to create objects?
 
 The provider has the recipe. Yes, seriously! That's what Angular calls it. The provider is aware of the recipe to create different types of objects; Specifically, two different types:
