@@ -25,7 +25,7 @@ Angular is opinionated about how a dynamic web application should be built. And 
 
 The AngularJS journey can evoke mixed feelings. The learning curve is very different from other JS frameworks. The initial barrier to get started is very low. But once you start diving deep the learning curve suddenly becomes steep. [Ben Nadel](http://www.bennadel.com/) sums up his experience succintly through this time series:
 
-![Feelings about AngularJS over time](/images/feelings_about_angularjs_over_time.png "Feelings about AngularJS over time")
+![Feelings about AngularJS over time](/assets/images/feelings_about_angularjs_over_time.png "Feelings about AngularJS over time")
 
 Although I'm still in transit, my journey so far has been pretty similar, if not as dramatic. But there have been some key elements of Angular that have got me very interested. Here, I'll try to cover a few of those aspects that I have begun to love in AngularJS.
 

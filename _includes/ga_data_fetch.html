@@ -36,7 +36,9 @@
                       dataPostUrl = dataPostUrl + "index.html";
                     }
 
-                    $(this).html("Views: " + oPageViews[dataPostUrl]);
+                    if (oPageViews[dataPostUrl] !== undefined && oPageViews[dataPostUrl] !== null ) {
+                      $(this).html("Views: " + oPageViews[dataPostUrl]);  
+                    }
 
                   });
                 }
