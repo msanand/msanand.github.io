@@ -83,7 +83,7 @@ forEach(argDecl[1].split(FN_ARG_SPLIT), function(arg) {
 });
 {% endhighlight %}
 
-Angular has two important components which makes dependency injection possible - `$injector` and `$provide`. `$injector` is responsible for identifying and retrieving the dependencies as defined by the provider (`$provide`) which has the knowledge of how to create the dependencies to be injected. I'll explain more about the provider in my next post.
+Angular has two important components which makes dependency injection possible - `$injector` and `$provide`. `$injector` is responsible for identifying and retrieving the dependencies as defined by the provider (`$provide`) which has the knowledge of how to create the dependencies to be injected. I'll explain more about the provider in my [next post]({% post_url 2014-09-22-angularjs-provider-subsystem %}).
 
 ### Issues with implicit dependencies
 
@@ -161,4 +161,4 @@ The implicit dependencies approach is probably the easiest and fastest to code. 
 
 **PRO TIP**: Use the `ng-strict-di` in the angular app element if you want to enforce explicit function annotation. With this attribute set, application will fail to invoke functions which do not use explicit function annotation and are unsuitable for minification. You can see what happens in the strict-di mode in the `annotate` function definition : `throw $injectorMinErr('strictdi', '{0} is not using explicit annotation and cannot be invoked in strict mode', name);`
 
-That covers pretty much all that I wanted to share on the injector sub-system in AngularJS and how it provides an intuitive dependency injection mechanism. I know I haven't explained the concept of provider in detail here. I'll reserve that for my next post.
+That covers pretty much all that I wanted to share on the injector sub-system in AngularJS and how it provides an intuitive dependency injection mechanism. I know I haven't explained the concept of provider in detail here. I'll reserve that for my [next post]({% post_url 2014-09-22-angularjs-provider-subsystem %}).
