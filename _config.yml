@@ -1,7 +1,7 @@
 # Dependencies
 markdown:         redcarpet
 redcarpet:
-  extensions: ["strikethrough","smart"]
+  extensions: ["strikethrough","smart","with_toc_data"]
 highlighter:         pygments
 
 # Permalinks
@@ -26,7 +26,7 @@ author:
   url:            https://twitter.com/msanand
 
 # Custom vars
-version:          1.2.0
+version:          1.3.0
 
 github:
   repo:           https://github.com/msanand/msanand.github.io

@@ -2,6 +2,12 @@
 layout: default
 ---
 
+<ul class="tags">
+  {% for tag in page.tags %}
+    <li><a href="{{ site.baseurl }}tags.html#{{tag}}" class="tag">{{ tag }}</a></li>
+  {% endfor %}
+</ul>
+
 <div class="post">
   <h1 class="post-title">{{ page.title }}</h1>
   <div>
