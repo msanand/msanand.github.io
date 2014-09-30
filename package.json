@@ -1,0 +1,26 @@
+{
+  "name": "anandmanisankar.com",
+  "version": "1.3.0",
+  "description": "Anand Mani Sankar's Journal",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/msanand/msanand.github.io.git"
+  },
+  "keywords": [
+    "blog"
+  ],
+  "author": "Anand Mani Sankar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/msanand/msanand.github.io/issues"
+  },
+  "homepage": "https://github.com/msanand/msanand.github.io",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "grunt-contrib-cssmin": "^0.10.0"
+  }
+}
