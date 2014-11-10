@@ -288,7 +288,7 @@ Borrowing another Hollywood reference, could '[SkyNet](http://en.wikipedia.org/w
 
 Google is already taking precautionary measures against an eventuality like this. [Here's the proof](http://www.google.com/killer-robots.txt).
 
-_A baby step towards Technological Singularity?_
+_IoT: A baby step towards Technological Singularity?_
 
 >Technological Singularity is a term used to describe the theoretical moment in time when artificial intelligence matches and then exceeds human intelligence. The term was popularized by scifi writer Vernor Vinge, but full credit goes to the mathematician John von Neumann, who spoke of [in the words of Stanislaw Ulam] "ever accelerating progress of technology and changes in the mode of human life, which gives the appearance of approaching some essential singularity in the history of the race beyond which human affairs, as we know them, could not continue."
 
