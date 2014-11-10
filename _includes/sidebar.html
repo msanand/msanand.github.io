@@ -30,7 +30,7 @@
 
 <!--     <a class="sidebar-nav-item" href="{{ site.github.repo }}/archive/v{{ site.version }}.zip">Download</a> -->
     <!--<a class="sidebar-nav-item" href="{{ site.github.repo }}">GitHub project</a>-->
-    <a class="sidebar-nav-item" target="_blank" href="https://github.com/msanand/feedback/issues/new">Feedback</a>
+    <a class="sidebar-nav-item" target="_blank" href="{{ site.github.feedback }}">Feedback</a>
     <span class="sidebar-nav-item">v{{ site.version }}</span>
   </nav>
 
@@ -40,7 +40,7 @@
     </p>
 
     <p>
-      &copy; {{ site.time | date: '%Y' }}. Anand Mani Sankar.
+      &copy; {{ site.time | date: '%Y' }}. {{ site.author.name }}.
     </p>
       All rights reserved.
   </div>

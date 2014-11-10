@@ -1,1 +1,4 @@
 _site/
+node_modules
+_drafts
+.idea

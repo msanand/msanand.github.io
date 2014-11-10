@@ -3,7 +3,7 @@ layout: post
 title: "AngularJS&#58; The Provider Subsystem"
 date:   2014-09-22 22:05 IST
 categories: javascript
-tags: javascript angularjs provider service factory
+tags: javascript angularjs provider service factory decorator
 comments: true
 analytics: true
 ---
