@@ -48,7 +48,7 @@ Although the hype is a little premature and expectations are inflated, I believe
 
 Its not just the corporates; **Governments want in on the action as well**. They are making IoT part of their strategy and are allocating significant budget in this direction. 'Smart cities', 'Smart Industries' are the buzz-words in IT policies of many governments.
 
-* [Industrie 4.0](http://en.wikipedia.org/wiki/Industry_4.0) is a strategic project of the German goverment to computerize the manufacturing industry with the help of IoT.
+* [Industrie 4.0](http://en.wikipedia.org/wiki/Industry_4.0) is a strategic project of the German government to computerise the manufacturing industry with the help of IoT.
 
 * British PM David Cameron announced a [collaboration between UK and Germany](http://www.in.techradar.com/news/computing/UK-to-collaborate-with-Germany-on-5G-Internet-of-Things/articleshow/38580173.cms) on IoT
 
@@ -90,7 +90,7 @@ At the core of IoT is the evolving relationship between humans and machines (or 
 
 As [Ali Babaoglan](http://www.alibabaoglan.com/blog/gartner-hype-cycle-2014/) puts it, emerging technologies are working towards the following:
 
-* Augmenting humans with technology: augmented reality, bioacoustic sensing, wearables, gesture control, 3D bio-printing...
+* Augmenting humans with technology: augmented reality, bio-acoustic sensing, wearables, gesture control, 3D bio-printing...
 
 * Machines replacing humans: Driverless cars, robots, virtual assistants...
 
@@ -150,7 +150,7 @@ The challenge mainly lies with developing an effective cross-industry technology
 
 Google and Nest are making [significant strides](http://www.forbes.com/sites/parmyolson/2014/06/24/google-nest-smart-home-internet-of-things/) in establishing the [Nest Platform](https://developer.nest.com/) as the foundation for all consumer-based IoT devices and their software. All major players like Cisco, Qualcomm, IBM, Broadcom, Samsung, Microsoft have similar strategies for creating standards.
 
-[Eclipse IoT Working Group](http://wiki.eclipse.org/IoT) is playing its part in standardising a set of open source technologies for IoT. This group is a collaboration of industry and academic partners building a set of open source technlogy that will be the foundation for the Internet of Things(IoT). The technologies constitute the protocols, tools, services and frameworks for building IoT/M2M applications. (Details listed above in this post)
+[Eclipse IoT Working Group](http://wiki.eclipse.org/IoT) is playing its part in standardising a set of open source technologies for IoT. This group is a collaboration of industry and academic partners building a set of open source technology that will be the foundation for the Internet of Things(IoT). The technologies constitute the protocols, tools, services and frameworks for building IoT/M2M applications. (Details listed above in this post)
 
 But, the opinion is still divided on standards and protocols.
 
@@ -160,7 +160,7 @@ Qualcomm developed a communication protocol for IoT, named [AllJoyn](https://www
 
 Google, early this year, announced a new networking protocol called [Thread](http://en.wikipedia.org/wiki/Thread_(network_protocol)) that aims to create a standard for communication between household devices. Thread is a networking protocol and not an IOT platform, and hence is not meant to compete with OIC or AllSeen. Instead they could work atop the Thread protocol.
 
-There are competing special purpose low-level protocols like Z-Wave, Zigbee, Bluetooth Low Energy (BTLE) protocol and many more. Although Thread has the advantage of being IPv6 based (IEEE 802.1.4), and developers tend to prefer IP based protocol stacks over specialized ones, there is still no standardization of the communication protocol in the IoT world.
+There are competing special purpose low-level protocols like Z-Wave, Zigbee, Bluetooth Low Energy (BTLE) protocol and many more. Although Thread has the advantage of being IPv6 based (IEEE 802.1.4), and developers tend to prefer IP based protocol stacks over specialised ones, there is still no standardisation of the communication protocol in the IoT world.
 
 This fragmentation of standards could severely hamper interoperability, which is one of the pillars of IoT.
 
@@ -253,7 +253,7 @@ Joseph Steinberg gives you more [reasons to be scared of smart devices](http://w
 
 Is Fire Sale a real possibility?
 
-Fire Sale is the main theme of the Die Hard film - Live Free or Die Hard. It is an all-out cyberwarfare attack that performs a three-stage systematic attack on a nation's computer infrastructure - shutting down transportation systems, disabling financial systems and turning off public utility systems.
+Fire Sale is the main theme of the Die Hard film - Live Free or Die Hard. It is an all-out cyber-warfare attack that performs a three-stage systematic attack on a nation's computer infrastructure - shutting down transportation systems, disabling financial systems and turning off public utility systems.
 
 With IoT, this fictitious threat could very well become a real threat! Actually, a [small scale secret experimental attack](http://edition.cnn.com/2007/US/09/26/power.at.risk/) was performed by the US Department of Energy in Idaho, where a power plants control system was hacked, changing the operating cycle of a generator and sending it out of control.
 
