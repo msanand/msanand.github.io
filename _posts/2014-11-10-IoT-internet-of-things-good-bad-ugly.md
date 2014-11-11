@@ -166,6 +166,14 @@ This fragmentation of standards could severely hamper interoperability, which is
 
 Also, to a large extent, the future of the Internet of Things will not be possible without the support of IPv6; and consequently the global adoption of IPv6 in the coming years will be critical for the successful development of the IoT in the future.
 
+<hr>
+#### **Update: 12<sup>th</sup> Nov 2014**
+
+IEEE has a [working group](http://standards.ieee.org/develop/project/2413.html) that is coming up with an architecture framework for IoT, focusing on standardization in addition to the blueprint/reference model. IETF is doing its part in standardization of the communication protocol, with [6LoWPAN](http://en.wikipedia.org/wiki/6LoWPAN), an IP based communication protocol, that is used as the base for the Thread protocol. [CoAP](http://en.wikipedia.org/wiki/Constrained_Application_Protocol) is another interesting approach to IoT communication, as it is designed to be a RESTful protocol.
+
+Thanks to Eric Anderson and srmoore4638 for this update!
+<hr>
+
 ### Environmental impact
 
 The possible explosion of e-waste is another growing concern. The  rapid mushrooming of small electronic devices could significantly contribute to the already growing e-waste.
