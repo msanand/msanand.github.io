@@ -1,36 +1,47 @@
 # Dependencies
 markdown:         redcarpet
 redcarpet:
-  extensions: [strikethrough,smart,with_toc_data]
-highlighter:         pygments
+  extensions:     [strikethrough,smart,with_toc_data]
+highlighter:      pygments
 
 # Permalinks
 permalink:        /posts/:title/
 
-# Setup
+# User Configuration
 title:            ANAND MANI SANKAR
-tagline:          "thoughts.toString( )"
+tagline:          'thoughts.toString( )'
 description:      'Ramblings and opinionated thoughts on technology.'
 url:              http://anandmanisankar.com
 baseurl:          '/'
 paginate:         3
-excerpt_separator: "<br>"
+excerpt_separator: '<br>'
 gems:
 - jekyll-mentions
 - jemoji
 - jekyll-redirect-from
 - jekyll-sitemap
 
+# Author Info
 author:
   name:           'Anand Mani Sankar'
   url:            https://twitter.com/msanand
+
+# Social Integration
+social:
   twitter:        msanand
   disqus:         thejournalofanandmanisankar
   addthis_pubid:  ra-53e8fec950d56b1c
 
-# Custom vars
-version:          1.4.0
+# Google Analytics Configuration
+# Proxy response must be in JSON and should have the fields - ga:pagePath, ga:pageview
+google_analytics:
+  tracking_id:      UA-53680945-1
+  super_proxy_url:  http://msa-super-proxy.appspot.com/query?id=ahFzfm1zYS1zdXBlci1wcm94eXIVCxIIQXBpUXVlcnkYgICAgICAgAoM&format=json
 
+# Github
 github:
   repo:           https://github.com/msanand/msanand.github.io
   feedback:       https://github.com/msanand/feedback/issues/new
+
+# Version Info
+version:          1.4.0
