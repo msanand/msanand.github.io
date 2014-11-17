@@ -16,9 +16,9 @@ Internet of Things (IoT) is a phrase gaining foothold in the international lexic
 
 ### How can a 'thing' become part of the 'Internet of Things'?
 
-#### Globally unique identity
+#### Unique identity
 
-Of course, every 'thing' needs to be uniquely identifiable among the plethora of things in the IoT. Integration with the Internet implies that the 'things' can use IP address as a unique identifier. However, due to the limited address space of IPv4 (which allows for 4.3 billion unique addresses), objects in the IoT will have to use **IPv6** to accommodate the extremely large address space requirement.
+Of course, every 'thing' needs to be globally uniquely identifiable among the plethora of things in the Internet of Things. Integration with the Internet implies that the 'things' can use IP address as a unique identifier. However, due to the limited address space of IPv4 (which allows for 4.3 billion unique addresses), objects in the IoT will have to use **IPv6** to accommodate the extremely large address space requirement. In case of 'Intranet' of things, a 'locally' unique identifier would suffice.
 
 #### Ability to wirelessly communicate
 
@@ -30,9 +30,9 @@ Things in IoT need to have some kind of sensory capabilities to detect events or
 
 #### Ability to be controlled remotely
 
-Another quality expected of 'things' in IoT is to the ability to control them remotely over the internet. Ideally, physical proximity to the device should not be a pre-requisite.
+Another quality expected of 'things' in IoT is the ability to control them remotely over the internet. Ideally, physical proximity to the device should not be a pre-requisite.
 
-With the advancements in pervasive or ubiquitous computing and thanks to Moore's law, even tiny 'things', with embedded logic, unique identifiers and the ability to wirelessly transfer data over the internet, can be part of the Internet-of-Things.
+With the advancements in pervasive or ubiquitous computing and thanks to Moore's law, even tiny 'things' with embedded logic, unique identifiers and the ability to wirelessly transfer data over the internet, can be part of the Internet-of-Things.
 
 ### Is IoT just a hyperbole?
 
@@ -136,6 +136,15 @@ Development platforms for IoT are also mushrooming, making it easy for developer
     * [Ponte](https://projects.eclipse.org/projects/technology.ponte) - a proposal to expose REST APIs for accessing 'things'
     * [SCADA](http://www.eclipse.org/eclipsescada/) - open source implementation of SCADA to control and monitor large scale industrial systems
 
+<hr>
+##### _Update: 17<sup>th</sup> Nov 2014_
+
+[Eclipse SmartHome](https://www.eclipse.org/smarthome/) project is a framework that allows building smart home solutions that have a strong focus on heterogeneous environments, i.e. solutions that deal with the integration of different protocols or standards. Its purpose is to provide a uniform access to devices and information, and to facilitate different kinds of interactions with them.
+
+Thanks Kai Kreuzer for this update!
+
+<hr>
+
 Overall, there are a lot of good things about IoT, both from a consumer and developer perspective. Many of the things that were science fiction until recently could be reality very soon!
 
 ## The Bad (Read: The Challenges)
@@ -167,11 +176,11 @@ This fragmentation of standards could severely hamper interoperability, which is
 Also, to a large extent, the future of the Internet of Things will not be possible without the support of IPv6; and consequently the global adoption of IPv6 in the coming years will be critical for the successful development of the IoT in the future.
 
 <hr>
-#### **Update: 12<sup>th</sup> Nov 2014**
+##### _Update: 12<sup>th</sup> Nov 2014_
 
 IEEE has a [working group](http://standards.ieee.org/develop/project/2413.html) that is coming up with an architecture framework for IoT, focusing on standardization in addition to the blueprint/reference model. IETF is doing its part in standardization of the communication protocol, with [6LoWPAN](http://en.wikipedia.org/wiki/6LoWPAN), an IP based communication protocol, that is used as the base for the Thread protocol. [CoAP](http://en.wikipedia.org/wiki/Constrained_Application_Protocol) is another interesting approach to IoT communication, as it is designed to be a RESTful protocol.
 
-Thanks to Eric Anderson and srmoore4638 for this update!
+Thanks Eric Anderson and srmoore4638 for this update!
 <hr>
 
 ### Environmental impact
@@ -258,6 +267,13 @@ Hackers who could only virtually spy on your computer until recently could now p
 
 Joseph Steinberg gives you more [reasons to be scared of smart devices](http://www.forbes.com/sites/josephsteinberg/2014/01/27/these-devices-may-be-spying-on-you-even-in-your-own-home/
 ) at home.
+
+<hr>
+##### _Update: 17<sup>th</sup> Nov 2014_
+
+Kai Kreuzer, founder of openHAB.org and project lead of [Eclipse SmartHome](https://www.eclipse.org/smarthome/), talks about ['Intranet' of things](http://kaikreuzer.blogspot.de/2014/02/privacy-in-smart-home-why-we-need.html), where he addresses the increasing privacy concerns with smart home devices.
+
+<hr>
 
 Is Fire Sale a real possibility?
 
