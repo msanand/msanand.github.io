@@ -42,6 +42,8 @@ You will need a Disqus account, AddThis account and Google Analytics Tracking ID
 
 Use the [Jekyll Starter Yeoman generator](https://www.npmjs.org/package/generator-jekyllstarter) to scaffold your blog in a matter of seconds.
 
+[![npm version](https://badge.fury.io/js/generator-jekyllstarter.svg)](http://badge.fury.io/js/generator-jekyllstarter)
+
 To install generator-jekyllstarter from npm, run:
 
 ```bash
