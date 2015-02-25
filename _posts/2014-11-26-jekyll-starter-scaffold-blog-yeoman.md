@@ -3,7 +3,7 @@ layout: post
 title: Jekyll Starter&#58; Scaffold a blog in seconds with Yeoman
 date:   2014-11-29 14:50 IST
 categories: blogging
-tags: blogging jekyll yeoman
+tags: blogging jekyll yeoman node.js npm
 comments: true
 analytics: true
 ---
