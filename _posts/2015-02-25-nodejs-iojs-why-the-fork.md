@@ -116,3 +116,8 @@ io.js - 'the friendly fork', is **not** intended to compete with Node. Someday, 
 The Node Foundation is expected to have two committees: The Foundation Board and the Technical Committee. The technical committee will operate independent of the foundation board, giving it the required freedom to drive the technical growth of the project. Whether the technical committee will have an open governance model like io.js is still not clear. ([William Bert](https://twitter.com/williamjohnbert) has created a [twitter campaign](http://nodegovernance.io/) to spam (read alert) Scott Hammond about the desire of the community to uses the io.js governance model for Node Foundation). The best thing that can happen is a successful reunion leveraging the best of both worlds.
 
 The ball is now in Joyent's court!
+
+<hr>
+#### **Update: 27<sup>th</sup> Feb 2015**
+[Mikael](https://github.com/mikeal) has created a work-in-progress ['Reconciliation Proposal'](https://github.com/iojs/io.js/issues/978) that covers topics like technical governance, long-term support, versioning and WG structuring proposals for a future 'Node' which re-unites 'Node.js' and 'io.js'.
+<hr>
