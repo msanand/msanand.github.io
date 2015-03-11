@@ -12,7 +12,7 @@ Continuing from where I left off in my [previous post]({% post_url 2014-08-17-se
 
 ###Bootstrap
 
-The standard Jekyll scaffolding is just one way to bootstrap your jekyll blog. Some might fing it basic, and would expect a little more to be available out-of-the-box. Fortunately, there are a few other ways in which you could bootstrap a more functional blog.<br>
+The standard Jekyll scaffolding is just one way to bootstrap your jekyll blog. Some might find it basic, and would expect a little more to be available out-of-the-box. Fortunately, there are a few other ways in which you could bootstrap a more functional blog.<br>
 
 * [Octopress](http://octopress.org/)
 * [Jekyll Bootstrap](http://jekyllbootstrap.com/)
