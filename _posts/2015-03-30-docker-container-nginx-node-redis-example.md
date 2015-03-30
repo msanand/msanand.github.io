@@ -141,7 +141,7 @@ The Circle CI YAML configuration looks like this:
 
 It uses the Docker service provided by CircleCI. It installs docker-compose as a dependency, and creates the Node container without any linkage to Redis. It then triggers the test on the Node application using mocha. This ensures that the tests are run against every new commit to Github.
 
-![Circle CI build output](/assets/images/CircleCI_output.png "Circle CI build output")
+![Circle CI build output](/assets/images/CircleCI_build.png "Circle CI build output")
 
 The Docker Hub service hook triggers a Docker build in [my Docker Hub Repository](https://registry.hub.docker.com/u/msanand/docker-workflow/) on every commit. This ensures that the latest image is always available in Docker Hub for continuous deployment to production. The production environment can pull the latest images from Docker Hub and compose the application from containers in no time.
 
