@@ -53,6 +53,16 @@ Let's look at the Node application first. I don't think it requires much explana
 
 You'll notice that I'm using some environment variables for the address and port for the Redis server. These environment variables are defined by Docker when linking the Redis container, making it convenient to communicate between containers.
 
+<hr>
+##### _Update: 31<sup>st</sup> Mar 2015_
+
+Docker, in addition to creating the environment variables, also updates the host entries in `/etc/hosts` file. In fact, Docker documentation recommends using the host entries from `etc/hosts` instead of the environment variables because the variables are not automatically updated if the source container is restarted.
+
+Also note that the [Docker Hub Registry](https://registry.hub.docker.com/) has many pre-built images with popular applications and their dependencies, which can be used directly. I'm building the images here using a Dockerfile primarily for demonstration how to create a custom image from scratch.
+
+<hr>
+
+
 <script src="http://gist-it.appspot.com/https://github.com/msanand/docker-workflow/blob/master/node/index.js?footer=minimal">
 </script>
 
