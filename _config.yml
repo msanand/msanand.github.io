@@ -13,7 +13,7 @@ tagline:          'thoughts.toString( )'
 description:      'Ramblings and opinionated thoughts on technology.'
 url:              http://anandmanisankar.com
 baseurl:          '/'
-paginate:         3
+paginate:         5
 excerpt_separator: '<br>'
 gems:
 - jekyll-mentions
