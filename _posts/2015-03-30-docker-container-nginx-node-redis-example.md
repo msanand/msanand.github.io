@@ -26,69 +26,65 @@ I could build the container from scratch using Docker commands, but to make it e
 
 Firstly, here's how I have defined the containers.
 
+<hr>
+##### _Update: 3<sup>rd</sup> Apr 2015_
+
+There are multiple approaches to configuring a Dockerfile and layering the images. One approch would be to start with a base OS image, like Ubuntu, and build your application and dependencies on top of it. The other, probably ideal approach, would be to use a pre-built image for your specific use. [Docker Hub Registry](https://registry.hub.docker.com/) has many pre-built images with popular applications and their dependencies, which can be used directly.
+
+I've altered the examples to demonstrate the different use-cases. I will demonstrate using a pre-built image as is for the Redis container, using a pre-built image with custom configuration for Nginx container and building an image from ubuntu for the Node container.
+
+<hr>
+
 ## The Redis container
 
-The Redis Dockerfile looks like this:
+Let's use the [official Redis image](https://registry.hub.docker.com/_/redis/) from Docker Hub for the Redis container. It comes pre-packaged with Redis Server installed and running on the default port 6379. So you don't need to configure anything as long as you're ok with the defaults. You can directly create and run a container off of the Redis image:
+
+`docker run -d --name redis -p 6379:6379 redis`
+
+If you were to build the Redis image from a base ubuntu image, the Dockerfile would look something like this:
 <script src="http://gist-it.appspot.com/https://github.com/msanand/docker-workflow/blob/master/redis/Dockerfile?footer=minimal">
 </script>
-
-The Redis container is a super simple one. I've configured the following within the Dockerfile:
-
-* Base 'Ubuntu' image from Docker Hub.
-* Install Redis Server using APT.
-* Since the default port for Redis is 6379, I let Docker know that the container will listen on this port using `EXPOSE` instruction.
-* I then defined an entry point which starts the Redis Server. I use `ENTRYPOINT` here instead of `CMD` as I don't want the command to be overwritten.
-
-Building a Docker image from the Dockerfile is pretty simple:
-
-`docker build -t msanand/redis .`
-
-Creating a container from the image is pretty straight forward as well:
-
-`docker run -d --name redis -p 6379:6379 msanand/redis`
 
 ## The Node container
 
 Let's look at the Node application first. I don't think it requires much explanation. All I'm doing is incrementing a view counter on each request using Redis INCR. I'm using the [node-redis module](https://github.com/mranney/node_redis) along with [hiredis](https://github.com/redis/hiredis) for better performance. (Yeah, a super high performance view counter wouldn't hurt!)
 
-You'll notice that I'm using some environment variables for the address and port for the Redis server. These environment variables are defined by Docker when linking the Redis container, making it convenient to communicate between containers.
+<script src="http://gist-it.appspot.com/https://github.com/msanand/docker-workflow/blob/master/node/index.js?footer=minimal">
+</script>
+
+You might have noticed the environment variables used for the address and port for the Redis server. These environment variables are defined by Docker when linking the Redis container, making it convenient to communicate between containers.
 
 <hr>
 ##### _Update: 31<sup>st</sup> Mar 2015_
 
 Docker, in addition to creating the environment variables, also updates the host entries in `/etc/hosts` file. In fact, Docker documentation recommends using the host entries from `etc/hosts` instead of the environment variables because the variables are not automatically updated if the source container is restarted.
 
-Also note that the [Docker Hub Registry](https://registry.hub.docker.com/) has many pre-built images with popular applications and their dependencies, which can be used directly. I'm building the images here using a Dockerfile primarily for demonstration how to create a custom image from scratch.
-
 <hr>
 
+Taking a different approach to building the Node container, let's use a base Ubuntu image and add Node and its dependencies on top of it.
 
-<script src="http://gist-it.appspot.com/https://github.com/msanand/docker-workflow/blob/master/node/index.js?footer=minimal">
-</script>
-
-Now let's look at the Dockerfile for the Node container:
+Node Dockerfile:
 <script src="http://gist-it.appspot.com/https://github.com/msanand/docker-workflow/blob/master/node/Dockerfile?footer=minimal">
 </script>
 
 * Ubuntu base image pulled from Docker Hub
-* Install dependencies using APT
-* Install Node.js using apt-get
+* Install Node.js and dependencies using apt-get
 * Install nodemon globally using npm
 * Copy the application source from the host directory to `src` within the container
 * Run `npm install` to install the node application dependencies
 * Port 8080 is exposed from the container and the application is run using nodemon
 
-Build a Docker image:
+Build a Docker image using the Dockerfile:
 
 `docker build -t msanand/node .`
 
-Create a container from the image:
+Create a Node container from the custom image and link it to the Redis container:
 
-`docker run -d --name node -p 8080:8080 --link redis:redis msanand/node`
+`docker run -d --name node -p 8080 --link redis:redis msanand/node`
 
 Since I plan to balance load between 3 node servers, I would have to create 3 containers - node1, node2 and node3.
 
-Note that I'm linking the node container with the redis container. This allows the Node container to interact with the Redis container using the latters address and port defined as environment variables.
+Note that I'm linking the node container with the redis container. This allows the Node container to interact with the Redis container using the host entries created by Docker or the address and port defined as environment variables.
 
 With this we have a Node application displaying a view counter maintained on Redis. Let's look at how we can load balance this with Nginx.
 
@@ -101,24 +97,28 @@ The core of NGiNX is its configuration, defined as a conf file. I've defined a s
 
 I've registered a `node-app` upstream server which load balances between 3 servers: node1, node2 and node3, on port 8080. I've also specified an equally weighted `least_conn` load balancing policy which balances load based on the number of active connections on each server. Alternately, you could use a round robin or IP hash or key hash based load balancing method. The Nginx server listens on port 80, and proxies requests to the upstream server `node-app` based on the load balancing policy. I would be digressing if I explained any more on the Nginx configuration.
 
-Let's look at the nginx Dockerfile:
+For building the Nginx container, I plan to use the [official Nginx image](https://registry.hub.docker.com/_/nginx/) from Docker Hub. I will use a Dockerfile to configure Nginx using my custom nginx conf file.
+
+The Dockerfile is minimal - uses the nginx image and copies the custom nginx configuration to it.
+
 <script src="http://gist-it.appspot.com/https://github.com/msanand/docker-workflow/blob/master/nginx/Dockerfile?footer=minimal">
 </script>
-
-Very similar to the previous Dockerfiles. But there are a couple of things that I would like to highlight here:
-
-* Before starting the nginx server, I'm deleting the default nginx configuration file and replacing it with my own copy.
-* I ensure that Nginx doesn't run as a daemon by adding `daemon off` to the config file. This is required because Docker containers are alive only for the duration when the process they are running is alive. So nginx running as a daemon would instantly stop the container as soon as it starts. Instead, running Nginx as a service ensures the container remains alive until the service is running.
 
 Build a Docker image:
 
 `docker build -t msanand/nginx .`
 
-Create a container from the image:
+Create an Nginx container from the image, linking to the Node container:
 
 `docker run -d --name nginx -p 80:80 --link node:node msanand/nginx`
 
-Finally, we have an Nginx server load balancing 3 node servers, which in turn talk to a Node server - each running in their own container.
+Finally, we have an Nginx server load balancing 3 node servers, which in turn talk to a Node server - each running in their own container!
+
+If we were to create a custom Nginx image from a base Ubuntu image, the Dockerfile would look something like this:
+<script src="http://gist-it.appspot.com/https://github.com/msanand/docker-workflow/blob/master/nginx/Dockerfile_custom?footer=minimal">
+</script>
+
+This Dockerfile ensures that Nginx doesn't run as a daemon by adding `daemon off` to the config file. This is required because Docker containers are alive only for the duration when the process they are running is alive. So nginx running as a daemon would instantly stop the container as soon as it starts. Instead, running Nginx as a service ensures the container remains alive until the service is running. The official Nginx image takes care of this by default.
 
 ## Composing the application with Docker Compose
 
@@ -130,11 +130,11 @@ I've defined a docker compose YAML as follows:
 <script src="http://gist-it.appspot.com/https://github.com/msanand/docker-workflow/blob/master/docker-compose.yml?footer=minimal">
 </script>
 
-The YAML file defines each container by name, pointing to the Dockerfile that is used for the build. In addition, it contains the container links and ports exposed by each of them.
+The YAML file defines each container by name, pointing to the Dockerfile that is used for the build. In addition, it contains the container links and ports exposed by each of them. Since the Redis container uses the official Redis image, no build is required.
 
 With a single command, Docker Compose will build the required images, expose the required ports, run and link the containers as defined in the YAML. All you need to do is run `docker-compose up`! Your 5 container application is up and running. Hit your host URL on port 80 and you have your view counter!
 
-One of the significant features of Docker Compose is the ability to dynamically scale a container. Using the command `docker-compose scale node=5`, one can scale the number of containers to run for a service. If you had a Docker based microservices architecture, you could easily scale specific services dynamically depending on the load distribution requirements. Ideally, I would have preferred defining 1 node service and scaling it up using Docker Compose. But I haven't figured a way to adjust the Nginx configuration dynamically. Please leave a comment if you have any thoughts on this.
+One of the significant features of Docker Compose is the ability to dynamically scale a container. Using the command `docker-compose scale node=5`, one can scale the number of containers to run for a service. If you had a Docker based microservices architecture, you could easily scale specific services dynamically depending on the load distribution requirements. Ideally, I would have preferred defining 1 node service and scaling it up using Docker Compose. But I haven't figured a way to adjust the Nginx configuration dynamically. Please leave a comment if you have any thoughts on this. (UPDATE: See comments below for approaches to maintaining a dynamic Nginx configuration)
 
 But one big caveat here is that Docker Compose is not production ready yet. The documentation recommends usage in a development environment, but not in production yet. But there are other container orchestration engines like Kubernetes discussed in my [previous post]({% post_url 2015-03-28-container-docker-PaaS-microservices %}).
 
