@@ -70,8 +70,8 @@ Node Dockerfile:
 * Ubuntu base image pulled from Docker Hub
 * Install Node.js and dependencies using apt-get
 * Install nodemon globally using npm
+* Run `npm install` in a temporary directory and copy to src (for caching `node_modules`)
 * Copy the application source from the host directory to `src` within the container
-* Run `npm install` to install the node application dependencies
 * Port 8080 is exposed from the container and the application is run using nodemon
 
 Build a Docker image using the Dockerfile:
