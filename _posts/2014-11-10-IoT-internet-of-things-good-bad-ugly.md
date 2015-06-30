@@ -8,6 +8,7 @@ comments: true
 analytics: true
 ---
 
+![IoT- the good, the bad and the ugly](/assets/images/iot_good_bad_ugly.png "Image credits: @AmancioBouza")
 
 Internet of Things (IoT) is a phrase gaining foothold in the international lexicon of technology. It refers to the growing number of everyday objects that are able to connect to the internet and communicate with each other.
 
