@@ -9,6 +9,10 @@ analytics: true
 ---
 
 
+<p align="center">
+  <img src="/assets/images/iot_good_bad_ugly.png" title="Image credits: @AmancioBouza" />
+</p>
+
 Internet of Things (IoT) is a phrase gaining foothold in the international lexicon of technology. It refers to the growing number of everyday objects that are able to connect to the internet and communicate with each other.
 
 > The Internet of Things (IoT) is the interconnection of uniquely identifiable embedded computing devices within the existing Internet infrastructure.
