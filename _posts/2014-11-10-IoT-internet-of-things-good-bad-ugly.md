@@ -9,15 +9,15 @@ analytics: true
 ---
 
 
-<p align="center">
-  <img src="/assets/images/iot_good_bad_ugly.png" title="Image credits: @AmancioBouza" />
-</p>
-
 Internet of Things (IoT) is a phrase gaining foothold in the international lexicon of technology. It refers to the growing number of everyday objects that are able to connect to the internet and communicate with each other.
 
 > The Internet of Things (IoT) is the interconnection of uniquely identifiable embedded computing devices within the existing Internet infrastructure.
 
 **Kevin Ashton** [coined the term](http://www.rfidjournal.com/articles/view?4986) "Internet of Things" to describe a system where the Internet is connected to the physical world via ubiquitous sensors. The 'thing' could be anything from a shoe, watch to medical instruments and household devices. But a 'thing' needs to have certain qualities to be part of the 'Internet of Things'. <br>
+
+<p align="center">
+  <img src="/assets/images/iot_good_bad_ugly.png" title="Image credits: @AmancioBouza" />
+</p>
 
 ### How can a 'thing' become part of the 'Internet of Things'?
 
