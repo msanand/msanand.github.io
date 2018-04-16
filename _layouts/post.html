@@ -4,7 +4,7 @@ layout: default
 
 <ul class="tags">
   {% for tag in page.tags %}
-    <li><a href="{{ site.baseurl }}tags.html#{{tag}}" class="tag">{{ tag }}</a></li>
+    <li><a href="{{ "/" | relative_url }}tags.html#{{tag}}" class="tag">{{ tag }}</a></li>
   {% endfor %}
 </ul>
 
