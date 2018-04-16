@@ -175,6 +175,7 @@ Some of the drawbacks mentioned earlier are being alleviated by Frameworks that 
 **Github Repository: [https://github.com/msanand/serverless-todo-api](https://github.com/msanand/serverless-todo-api)**
 
 ![Serverless Todo Service Architecture](/assets/images/sls_todo_architecture.png "Serverless Todo Service Architecture")
+<sup>**Note**: The single line from AWS Lambda to DynamoDB in the diagram above is a simplification to avoid cluttering. There is no common connection shared between the lambda functions.</sup>
 
 #### Pre-requisites
 
