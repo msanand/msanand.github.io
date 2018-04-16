@@ -15,7 +15,7 @@ url:              http://anandmanisankar.com
 baseurl:          '/'
 paginate:         5
 excerpt_separator: '<br>'
-plugins:
+gems:
 - jekyll-mentions
 - jemoji
 - jekyll-redirect-from
