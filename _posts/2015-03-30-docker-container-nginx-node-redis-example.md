@@ -2,8 +2,8 @@
 layout: post
 title: A sample Docker workflow with Nginx, Node.js and Redis
 date:   2015-03-30 21:00 IST
-categories: containers docker node.js nginx redis
-tags: containers docker node.js nginx redis
+categories: cloud containers docker node.js nginx redis
+tags: cloud containers docker node.js nginx redis
 comments: true
 analytics: true
 ---

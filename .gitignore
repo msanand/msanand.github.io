@@ -4,3 +4,5 @@ _drafts
 .idea
 
 .DS_Store
+assets/images/Thumbs.db
+Gemfile.lock

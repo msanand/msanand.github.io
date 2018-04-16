@@ -9,20 +9,23 @@ module.exports = function(grunt) {
                 "assets/css/all.min.css" : ['assets/css/*.css']
             }
         }
-    }
-//    jekyll: {                            // Another target
-//        options: {
-//            drafts: true,
-//            watch: true,
-//            safe: true
-//        }
-//    }
+    },
+   jekyll: {
+       serve: true,
+       options: {
+           drafts: true,
+           watch: true,
+           safe: true,
+           future: true,
+           livereload: true
+       }
+   }
   });
 
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-jekyll');
 
   // Default task(s).
-  grunt.registerTask('default', ['cssmin']);
+  grunt.registerTask('default', ['cssmin', 'serve']);
 
 };
