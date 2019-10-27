@@ -8,10 +8,12 @@ layout: default
   {% endfor %}
 </ul>
 
+{% capture readtime %}{{ content | number_of_words | divided_by:265 | plus:1}}{% endcapture %}
+
 <div class="post">
   <h1 class="post-title">{{ page.title }}</h1>
   <div>
-    <span class="post-date" style="float: left;">{{ page.date | date_to_string }}</span>
+    <span class="post-date" style="float: left;">{{ page.date | date_to_string }}. &nbsp;&nbsp;&nbsp;{{ readtime }} min read.</span>
     <span class="post-date" style="float: right;" id="ga-pageviews"></span>
   </div>
   <div style="clear: both;"></div>​
