@@ -8,7 +8,7 @@ title: Home
 
   <ul class="tags">
     {% for tag in post.tags %}
-      <li><a href="{{ "/" | relative_url }}tags.html#{{tag}}" class="tag">{{ tag }}</a></li>
+      <li><a href="{{ "/" | relative_url }}tags#{{tag}}" class="tag">{{ tag }}</a></li>
     {% endfor %}
   </ul>
 
