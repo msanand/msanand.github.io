@@ -1,0 +1,70 @@
+<script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+<script>
+  window.cookieconsent.initialise({
+    palette:{
+      popup: {background: "#eeeeee"},
+      button: {background: "#6a9fb5"},
+    },
+    theme: "classic",
+    position: "bottom-right",
+    type: "opt-out",
+    // revokable: false,
+    // "content": {
+    //   "href": "google.com"
+    // }
+    content: {
+      "message": "This website uses cookies to make your browsing experience better. By using this site you agree to our use of cookies."
+    },
+    onInitialise: function (status) {
+      var type = this.options.type;
+      var didConsent = this.hasConsented();
+      if (type == 'opt-in' && didConsent) {
+        // enable cookies
+        console.log("Opt in and consented. Enable cookies");
+        (adsbygoogle = window.adsbygoogle||[]).pauseAdRequests = 0;
+      }
+      if (type == 'opt-out' && !didConsent) {
+        // disable cookies
+        console.log("Opt out and not consented. Disable cookies.");
+        (adsbygoogle = window.adsbygoogle||[]).pauseAdRequests = 1;
+      }
+    },
+    onStatusChange: function(status, chosenBefore) {
+      var type = this.options.type;
+      var didConsent = this.hasConsented();
+      if (type == 'opt-in' && didConsent) {
+        // enable cookies
+        console.log("Opt in and consented. Enable cookies.");
+        (adsbygoogle = window.adsbygoogle||[]).pauseAdRequests = 0;
+      }
+      if (type == 'opt-out' && !didConsent) {
+        // disable cookies
+        console.log("Opt out and not consented. Disable cookies.");
+        (adsbygoogle = window.adsbygoogle||[]).pauseAdRequests = 1;
+      }
+    },
+    onRevokeChoice: function() {
+      var type = this.options.type;
+      if (type == 'opt-in') {
+        // disable cookies
+        console.log("Revoke triggered with type opt-in. Disable cookies");
+        (adsbygoogle = window.adsbygoogle||[]).pauseAdRequests = 1;
+      }
+      if (type == 'opt-out') {
+        // enable cookies
+        console.log("Revoke triggered with type opt-out. Enable cookies");
+        (adsbygoogle = window.adsbygoogle||[]).pauseAdRequests = 0;
+      }
+    }
+    // onStatusChange: function(status) {
+    //   console.log(this.hasConsented() ?
+    //     'enable cookies' : 'disable cookies');
+    // },
+    // law: {
+    //   regionalLaw: false,
+    // },
+    // location: true
+  });
+
+
+</script>
