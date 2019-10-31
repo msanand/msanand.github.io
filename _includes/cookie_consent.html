@@ -7,13 +7,14 @@
     },
     theme: "classic",
     position: "bottom-right",
-    type: "opt-out",
+    // type: "opt-out",
     // revokable: false,
     // "content": {
     //   "href": "google.com"
     // }
     content: {
-      "message": "This website uses cookies to make your browsing experience better. By using this site you agree to our use of cookies."
+      message : "This website uses cookies for statistics and advertising. This is used for understanding visitor expectations and improving the website experience.",
+      dismiss : "OK"
     },
     onInitialise: function (status) {
       var type = this.options.type;
