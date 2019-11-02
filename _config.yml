@@ -32,8 +32,6 @@ social:
   disqus:         thejournalofanandmanisankar
   addthis_pubid:  ra-53e8fec950d56b1c
 
-google_ad_client: ca-pub-8347034922117170
-
 # Google Analytics Configuration
 # Proxy response must be in JSON and should have the fields - ga:pagePath, ga:pageview
 google_analytics:
