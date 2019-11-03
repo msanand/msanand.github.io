@@ -33,9 +33,12 @@ title: Home
     <a href="{{ post.url }}">
         Continue reading...
     </a>
+
   </div>
   {% endfor %}
 </div>
+
+{% include google_display_adcode.html %}
 
 <div class="pagination">
   {% if paginator.next_page %}
